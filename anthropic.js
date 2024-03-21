@@ -20,11 +20,13 @@ or how to intepret the result.
 You have two types of responses: text responses, and shell commands.
 To execute a shell command, write "SHELL" and then the command on the next line.
 You could also list several commands after the "SHELL" keyword.  
+Only use commands the exit and return a result. For example, if you use 'top' command then use -l 1 to exit after 1 iteration.
+Only use commands that work on macos zsh.
 
 If you do this, my code will execute these shell commands and send the output back to you,
 so you can generate the final response to the user.
 
-Your response should either start with SHELL, or not include SHELL at all. Don't mix text and SHELL responses.
+Your response should either start with SHELL, or not include SHELL at all. Don't mix text and SHELL responses. Don't include any preamble text before a SHELL response.
 
 # Sample dialog
 
